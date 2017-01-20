@@ -1,0 +1,7 @@
+curl -L git.io/nodebrew | perl - setup
+echo 'export PATH=$HOME/.nodebrew/current/bin:$PATH' >> ~/.profile
+source ~/.profile
+
+nodebrew install-binary v4.2.3
+nodebrew use v4.2.3
+
